@@ -1,0 +1,142 @@
+|maquina_chocolate
+clk => clk.IN4
+rst => rst.IN2
+nc20 => nc20.IN1
+nc10 => nc10.IN1
+nc5 => nc5.IN1
+led[0] <= maquina_core:maquina_core_u0.led
+led[1] <= maquina_core:maquina_core_u0.led
+led[2] <= maquina_core:maquina_core_u0.led
+led[3] <= maquina_core:maquina_core_u0.led
+
+
+|maquina_chocolate|redutor2:redutor2_u0
+clk => q[0].CLK
+clk => q[1].CLK
+clk => q[2].CLK
+clk => q[3].CLK
+clk => q[4].CLK
+clk => q[5].CLK
+clk => q[6].CLK
+clk => q[7].CLK
+clk => q[8].CLK
+clk => q[9].CLK
+clk => q[10].CLK
+clk => q[11].CLK
+clk => q[12].CLK
+clk => q[13].CLK
+clk => q[14].CLK
+clk => q[15].CLK
+clk => q[16].CLK
+clk => q[17].CLK
+clk => q[18].CLK
+clk => q[19].CLK
+clk => q[20].CLK
+clk => q[21].CLK
+clk => q[22].CLK
+clk => q[23].CLK
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+n_clk <= q[23].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|maquina_chocolate|maquina_core:maquina_core_u0
+led[0] <= Next_State[0].DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= Next_State[1].DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= Next_State[2].DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= Next_State[3].DB_MAX_OUTPUT_PORT_TYPE
+c20 => Next_State.DATAA
+c20 => Next_State.DATAA
+c20 => Next_State.DATAA
+c20 => Next_State.DATAA
+c20 => Next_State.DATAB
+c10 => Next_State.DATAA
+c10 => Next_State.DATAA
+c10 => Next_State.OUTPUTSELECT
+c10 => Next_State.OUTPUTSELECT
+c10 => Next_State.OUTPUTSELECT
+c10 => Next_State.OUTPUTSELECT
+c10 => Next_State.DATAA
+c10 => Next_State.OUTPUTSELECT
+c10 => Next_State.DATAA
+c5 => Mux3.IN9
+c5 => Next_State.OUTPUTSELECT
+c5 => Next_State.OUTPUTSELECT
+c5 => Mux3.IN6
+c5 => Next_State.OUTPUTSELECT
+c5 => Next_State.OUTPUTSELECT
+c5 => Next_State.OUTPUTSELECT
+c5 => Next_State.OUTPUTSELECT
+c5 => Next_State.OUTPUTSELECT
+c5 => Next_State.OUTPUTSELECT
+c5 => Next_State.OUTPUTSELECT
+c5 => Next_State.OUTPUTSELECT
+c5 => Next_State.OUTPUTSELECT
+c5 => Mux3.IN7
+c5 => Next_State.OUTPUTSELECT
+c5 => Next_State.OUTPUTSELECT
+clk => Next_State[0].CLK
+clk => Next_State[1].CLK
+clk => Next_State[2].CLK
+clk => Next_State[3].CLK
+rst => Next_State.OUTPUTSELECT
+rst => Next_State.OUTPUTSELECT
+rst => Next_State.OUTPUTSELECT
+rst => Next_State.OUTPUTSELECT
+
+
+|maquina_chocolate|button:b0
+clk => next_state~3.DATAIN
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+bt <= bt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|maquina_chocolate|button:b1
+clk => next_state~3.DATAIN
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+bt <= bt.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|maquina_chocolate|button:b2
+clk => next_state~3.DATAIN
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+b0 => next_state.OUTPUTSELECT
+bt <= bt.DB_MAX_OUTPUT_PORT_TYPE
+
+

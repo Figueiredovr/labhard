@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -2.509
+TNS   : -37.271
+
+Type  : Slow 1200mV 85C Model Setup 'redutor2:redutor2_u0|q[23]'
+Slack : -1.914
+TNS   : -7.074
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'redutor2:redutor2_u0|q[23]'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -52.071
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'redutor2:redutor2_u0|q[23]'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -2.122
+TNS   : -30.533
+
+Type  : Slow 1200mV 0C Model Setup 'redutor2:redutor2_u0|q[23]'
+Slack : -1.763
+TNS   : -6.540
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.255
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'redutor2:redutor2_u0|q[23]'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -52.071
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'redutor2:redutor2_u0|q[23]'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.552
+TNS   : -3.870
+
+Type  : Fast 1200mV 0C Model Setup 'redutor2:redutor2_u0|q[23]'
+Slack : -0.286
+TNS   : -0.889
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : -0.121
+TNS   : -0.121
+
+Type  : Fast 1200mV 0C Model Hold 'redutor2:redutor2_u0|q[23]'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -38.118
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'redutor2:redutor2_u0|q[23]'
+Slack : -1.000
+TNS   : -4.000
+
+------------------------------------------------------------

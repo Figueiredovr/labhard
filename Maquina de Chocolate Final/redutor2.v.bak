@@ -1,0 +1,21 @@
+module redutor2 (
+
+input clk,rst;
+output n_clock;
+
+);
+
+reg [24:0] q;
+assign n_clock = [24]q;
+
+always @(posedge clk)begin
+	if(~rst)
+		q=0;
+	else
+		q=q+1b'1;
+end
+
+
+
+
+endmodule

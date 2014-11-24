@@ -1,0 +1,48 @@
+module robo (
+	input clk,    // Clock
+	input rst_n,  // Asynchronous reset active low
+	input front,
+	input left,
+
+	output reg foward,
+	output reg turn_left
+);
+
+reg[1:0] state;
+
+parameter cs1 = 2'b00, cs2 = 2'b11, cs3 = 2'b10, cs4 = 2'b01;
+
+always @(posedge clk or negedge rst_n) begin
+	if(~rst_n) begin
+		
+	end else begin
+	case (state)
+
+		cs1:begin
+			foward<= 1'b1;
+			left<= 1'b0;
+		end
+
+		cs2:begin
+			foward<= 1'b0;
+			left<= 1'b1;
+		end
+
+		cs3:begin
+			foward<= 1'b0;
+			left<= 1'b1;
+		end
+
+		cs1:begin
+			foward<= 1'b1;
+			left<= 1'b0;
+		end
+
+	
+		default : /* default */;
+	endcase
+	end
+end
+
+
+endmodule

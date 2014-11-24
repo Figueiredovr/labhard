@@ -1,0 +1,18 @@
+
+State Machine - |maquina_chocolate|button:b2|next_state
+Name next_state.st0 next_state.st2 next_state.st1 
+next_state.st0 0 0 0 
+next_state.st1 1 0 1 
+next_state.st2 1 1 0 
+
+State Machine - |maquina_chocolate|button:b1|next_state
+Name next_state.st0 next_state.st2 next_state.st1 
+next_state.st0 0 0 0 
+next_state.st1 1 0 1 
+next_state.st2 1 1 0 
+
+State Machine - |maquina_chocolate|button:b0|next_state
+Name next_state.st0 next_state.st2 next_state.st1 
+next_state.st0 0 0 0 
+next_state.st1 1 0 1 
+next_state.st2 1 1 0 

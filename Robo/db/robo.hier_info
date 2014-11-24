@@ -1,0 +1,72 @@
+|robo
+clk => clk.IN1
+rst_n => rst_n.IN2
+front => front.IN1
+left => left.IN1
+foward <= robo_core:robo01.foward
+turn_left <= robo_core:robo01.turn_left
+
+
+|robo|robo_core:robo01
+clk => turn_left~reg0.CLK
+clk => foward~reg0.CLK
+rst_n => turn_left~reg0.ENA
+rst_n => foward~reg0.ENA
+front => Decoder0.IN0
+left => Decoder0.IN1
+foward <= foward~reg0.DB_MAX_OUTPUT_PORT_TYPE
+turn_left <= turn_left~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|robo|redutor2:redutor01
+clk => q[0].CLK
+clk => q[1].CLK
+clk => q[2].CLK
+clk => q[3].CLK
+clk => q[4].CLK
+clk => q[5].CLK
+clk => q[6].CLK
+clk => q[7].CLK
+clk => q[8].CLK
+clk => q[9].CLK
+clk => q[10].CLK
+clk => q[11].CLK
+clk => q[12].CLK
+clk => q[13].CLK
+clk => q[14].CLK
+clk => q[15].CLK
+clk => q[16].CLK
+clk => q[17].CLK
+clk => q[18].CLK
+clk => q[19].CLK
+clk => q[20].CLK
+clk => q[21].CLK
+clk => q[22].CLK
+clk => q[23].CLK
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+rst => q.OUTPUTSELECT
+n_clk <= q[23].DB_MAX_OUTPUT_PORT_TYPE
+
+

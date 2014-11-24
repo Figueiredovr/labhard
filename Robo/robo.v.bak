@@ -1,0 +1,36 @@
+module robo (
+	input clk,    // Clock
+	input rst_n,  // Asynchronous reset active low
+	input front,
+	input left,
+
+	output reg foward,
+	output reg turn_left
+	
+	);
+
+wire w_clk;
+
+robo robo01(
+
+	.clk(w_clk),
+	.rst_n(rst_n),
+	.front(front),
+	.left(left),
+
+	.foward(foward),
+	.turn_left(turn_left)
+
+);
+
+redutor2 redutor01(
+
+	.clk(clk),
+	.rst(rst_n),
+
+	.n_clk(w_clk)
+
+
+);
+
+endmodule
